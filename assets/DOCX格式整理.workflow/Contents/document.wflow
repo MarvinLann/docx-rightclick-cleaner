@@ -60,7 +60,7 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>#!/bin/bash
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/usr/local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 LOG_FILE="$HOME/.tools/logs/docx_format_cleaner.log"
 mkdir -p "$HOME/.tools/logs"

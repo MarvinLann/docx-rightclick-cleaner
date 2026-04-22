@@ -39,7 +39,7 @@ LOG_DIR = Path.home() / ".docx-cleaner" / "logs"
 
 # ── Shell 脚本模板（workflow 内嵌，安装时动态生成）──────────────
 WORKFLOW_SHELL_TEMPLATE = r"""#!/bin/bash
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export PATH="$HOME/usr/local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
 LOG_FILE="$HOME/.docx-cleaner/logs/docx_format_cleaner.log"
 mkdir -p "$HOME/.docx-cleaner/logs"
