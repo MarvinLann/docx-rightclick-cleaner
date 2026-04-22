@@ -57,7 +57,7 @@ def accept_revisions_and_convert(docx_path: str) -> str:
                 pandoc,
                 str(tmp_docx),
                 "-f", "docx",
-                "-t", "markdown",
+                "-t", "markdown-simple_tables-grid_tables-multiline_tables",
                 "--wrap=none",
                 "-o", str(out_md),
             ],
